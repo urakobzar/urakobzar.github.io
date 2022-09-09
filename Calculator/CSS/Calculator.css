@@ -1,0 +1,94 @@
+		html, body {
+			background-color: black;
+		}
+
+		h1{
+			color: white;
+			font-family: cursive;
+		}
+		h2 {
+			color: yellow;
+			font-family: cursive;
+		}
+		
+		table {
+			font-family: cursive;
+			font-size: 23px;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		#calcOutput {
+			background-color: white;
+			width: 300px;
+			height: 75px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+
+		#calculator {
+			background-color: lightgrey;
+			width: 300px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+        #calcOutputRegularCalculator {
+            background-color: white;
+            width: 300px;
+            height: 75px;
+            border-top-left-radius: 2em;
+            border-top-right-radius: 2em;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        #calculatorRegularCalculator {
+            background-color: lightgrey;
+            width: 300px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            border-bottom-left-radius: 2em;
+            border-bottom-right-radius: 2em;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+		#steps {
+			padding-left: 50px;
+			font-size: 2em;
+		}
+
+		#steps2 {
+			padding-left: 50px;
+			font-size: 2em;
+		}
+
+		a {
+			margin: 5px;
+			width: 47px;
+			height: 47px;
+		}
+
+		.bigButton {
+			width: 110px;
+		}
+		.item {
+			background-color: yellow
+		}
+
+		.selected {
+			background-color: white
+		}
+
+		.menu {
+			border-style: solid
+		}

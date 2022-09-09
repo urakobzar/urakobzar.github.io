@@ -1,0 +1,271 @@
+*{
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+}
+
+img{
+    max-width:100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.none {
+    display: none !important;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: aquamarine;*/
+    /*background-image: url("img/header/header-bg.jpeg");*/ 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title{
+    margin-bottom:25px;
+    font-weight: bold;
+    font-size:56px;
+    line-height:130%;
+    text-align:center;
+    color: white;
+}
+
+.header-subtitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header-arrow{
+    width:48px;
+    height:48px;
+    position:absolute;
+    bottom:30px;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+
+
+.portfolio{
+    padding-top:80px;
+    padding-bottom:115px;
+}
+
+.portfolio-header {
+    margin:0;
+    margin-bottom:70px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: black;
+}
+
+.portfolio-cards-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+
+.card {
+    margin-bottom:30px;
+    min-width:540px;
+    max-width: 540px;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgb(26, 6, 39);
+    transition: transform 0.2s ease-in;
+}
+
+.card:hover{
+    transform:translateY(-15px);
+}
+
+.card-link {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+    color: mediumpurple;
+}
+
+.card:last-child, .card:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.card-img{
+    margin-bottom:20px;
+}
+
+.card-title {
+    margin:0;
+    margin-bottom:13px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.card p {
+    margin:0;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.footer{
+    padding-top:45px;
+    padding-bottom:130px;
+    background-color:#4f63d9;   
+    color:white;
+}
+
+.footer-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.footer-col {
+    max-width: 350px;
+    flex-grow:1;
+}
+
+.footer-copyright {
+    color: #adcfff;
+    line-height: 1.3;
+}
+
+.footer-copyright-name {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer-icons p{
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer-icons-row {
+    display:flex;
+    align-items:center;
+}
+
+.footer-icons-row > * + * {
+    margin-left:30px;
+}
+
+.footer-button {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.footer-button:hover {
+    background-color:white;
+    color: #4f63d9;
+}
+
+.footer-contacts p {
+    line-height: 1.3;
+    margin: 15px 0;
+    font-size: 16px;
+    color: #adcfff;
+}
+
+.project {
+    padding: 80px 0 120px 0;
+    text-align: center;
+}
+
+.project-header {
+    margin:0;
+    margin-bottom:30px;
+    line-height: 1.3;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.project-img{
+    margin-bottom:70px;
+}
+
+.project-description {
+    margin: 0 auto 60px;
+    max-width:730px;
+}
+
+.project-description p {
+    margin-top:0;
+    margin-bottom:15px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.project-button-back {
+    display: inline-block;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+    border: 3px solid rgb(26, 6, 39);
+    border-radius: 50px;
+    color: #1A2741;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.project-button-back:hover {
+    background-color: rgb(26, 6, 39);
+    color: white;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "RU">
+<html>
+<head>
+    <title>Dragon</title>
+    <link rel="stylesheet" type="text/css" href="https://atuin.ru/demo/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+
+        function addAnim() {
+            const element = document.querySelector('#div');
+            element.classList.add("animate__animated", "animate__shakeX");
+            element.addEventListener("animationend", () => {
+                element.classList.remove("animate__animated", "animate__shakeX");
+            })
+        }
+
+        var rotateAngle = -1;
+
+        function rotate(image) {
+            image.setAttribute("style", "transform: scaleX(" + rotateAngle + ")");
+            rotateAngle = rotateAngle * (-1);
+
+        }
+
+        function soundClick() {
+            var audio = new Audio(); 
+            audio.src = 'All gonna be a good.mp3'; 
+            audio.autoplay = true; 
+        }
+
+        $(document).ready(function () {
+            $("button").on("click", function () {
+                if (this.id === "run") {
+                    running();
+                    $(this).prop('disabled', true);
+                    setTimeout(function () {
+                        $(this).prop('disabled', false);
+                    }.bind(this), 5000);
+                }
+                else if (this.id === "dance") {
+                    dancing();
+                    $(this).prop('disabled', true);
+                    setTimeout(function () {
+                        $(this).prop('disabled', false);
+                    }.bind(this), 26000);
+                }
+                else if (this.id === "fly") {
+                    flying();
+                    $(this).prop('disabled', true);
+                    setTimeout(function () {
+                        $(this).prop('disabled', false);
+                    }.bind(this), 5000);
+                }
+
+            });
+        });
+
+        function running() {
+            $("#div").animate({
+                right: "-=43vw",
+            }, 1000);
+            $("#div").animate({
+                right: "+=86vw",
+            }, 1000);
+            $("#div").animate({
+                right: "-=43vw",
+            }, 1000);
+        }
+
+        function dancing() {
+            soundClick();
+            addAnim();
+
+            $("#div").animate({
+                right: "-=15vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=15vw",
+            }, 500);
+
+            $("#div").animate({
+                right: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=12vw",
+            }, 500);
+
+            $("#div").animate({
+                right: "-=12vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "-=15vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=15vw",
+            }, 500);
+
+            $("#div").animate({
+                right: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=12vw",
+            }, 500);
+
+            $("#div").animate({
+                right: "-=12vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=10vw",
+            }, 500);
+        }
+
+        function flying() {
+            $("#div").animate({
+                right: "-=25vw", top: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=25vw", top: "+=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "-=25vw", top: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=25vw", top: "+=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "-=25vw", top: "+=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "-=25vw", top: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=25vw", top: "+=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=25vw", top: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "-=25vw", top: "-=10vw",
+            }, 500);
+            $("#div").animate({
+                right: "+=25vw", top: "+=10vw",
+            }, 500);
+        }
+
+    </script>
+
+    <style>
+        #rotater {
+            transition: all 0.3s ease;
+        }
+        h1,h2{
+            font-family:cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <h1 align=center>
+        Dragon
+    </h1>
+    <h2 align=center>
+        Press to dragon or press to buttons ;)
+    </h2>
+    <br>
+    <div class="text-center" id="buttons">
+        <button class="btn btn-danger" id="run">Run</button>
+        <button class="btn btn-danger" id="dance">Dance</button>
+        <button class="btn btn-danger" id="fly">Fly</button>
+        <br />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="div" style="right: 43vw;position: absolute;animation-iteration-count:25;">
+        <img id="rotater" onclick="rotate(this)" src="Dragon.png">
+    </div>
+</body>
+</html>
