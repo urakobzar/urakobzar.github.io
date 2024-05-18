@@ -1,0 +1,20 @@
+.footer {
+    background-color: #E9EAE2;
+    padding: 11px 15px;
+    text-align: center;    
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.4;
+}
+
+.about-us-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
