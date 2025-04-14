@@ -19,7 +19,7 @@ html, body{
 }
 
 .header{
-    background-image: url(./img/hero.jpeg);
+    background-image: url(./img/back1.jpg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-attachment: scroll;
@@ -27,10 +27,10 @@ html, body{
     height: 60vh;
     margin: 0;
     padding-top: 40vh;
-    border-bottom:2px solid black;
+    border-bottom:1px solid rgb(255, 255, 255);
 }
 .heading {
-    color: #ffffff;
+    color: #4E1F31;
     display: block;
     font-family: 'Caveat', cursive;
     font-size: 6em;
