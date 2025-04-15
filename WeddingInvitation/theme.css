@@ -7,11 +7,7 @@ html, body {
     margin: 0;
     height: 100vh;
     text-align: center;
-    font-family: 'Times New Roman', /* Windows */
-    'Times', /* MacOS */
-    'Liberation Serif', /* Linux */
-    'Noto Serif', /* Android */
-    serif; /* Универсальный запасной вариант */
+    font-family: 'Noto Serif';
 }
 
 .body{
