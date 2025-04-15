@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Saint Amour Script';
+	src: url('fonts/saint_amour_script.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/saint_amour_script.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/saint_amour_script.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/saint_amour_script.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/saint_amour_script.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/saint_amour_script.svg#saint_amour_script') format('svg'); /* Chrome < 4, Legacy iOS */
+}
