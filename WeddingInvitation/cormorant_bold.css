@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Cormorant Bold';
+	src: url('/fonts/cormorant_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('/fonts/cormorant_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('/fonts/cormorant_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('/fonts/cormorant_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('/fonts/cormorant_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('/fonts/cormorant_bold.svg#cormorant_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
