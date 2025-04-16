@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     height: 100vh;
     text-align: center;
-    font-family: 'PT Serif', ''Georgia'', ''Times New Roman'', serif;
+    font-family: 'Times New Roman', 'PT Serif', 'Georgia', serif;
 }
 
 .body{
@@ -27,10 +27,10 @@ html, body {
 .header{
     background-image: url(./img/back1.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 60%;
+    background-position: 50% 50%;
     background-attachment: scroll;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     padding-top: 20vh;
     border-bottom:1px solid rgb(255, 255, 255);
@@ -40,11 +40,12 @@ html, body {
     color: #4E1F31;
     font-weight: normal;
 }
-.heading-subtext{
+.heading-subtext {
     color: #4E1F31;
     display: block;
     font-family: 'Saint Amour Script';
     font-size: 4em;
+    font-weight: normal;
 }
 .fixed-button{
     background: rgba(20,20,20,.5);
@@ -93,8 +94,15 @@ html, body {
     line-height: 1em;
     color: #4E1F31;
 }
+
+.sub-headin11g {
+    /*font-family: 'CapsuleXProMediumUC';*/
+    font-size: 2em;
+    line-height: 1em;
+    color: #4E1F31;
+}
 .details{
-    margin: 0 auto 8em;
+    margin: 0 auto 4em;
 }
 .details-heading{
     font-weight: bold;
@@ -138,7 +146,7 @@ html, body {
 .line-text {
     border-top: 2px solid #4E1F31;
     border-bottom: 2px solid #4E1F31;
-    padding: 8px 0;
+    padding: 4px 0;
     font-size: 20px;
     color: #4E1F31;
     width: 100px;
@@ -146,12 +154,12 @@ html, body {
 }
 
 .calendar-date {
-    padding: 0 15px;
+    padding: 0 1px;
     flex: 0 0 auto; /* Фиксированная ширина */
 }
 
   .calendar-date .day {
-    font-size: 36px;
+    font-size: 26px;
     color: #4E1F31;
   }
 
