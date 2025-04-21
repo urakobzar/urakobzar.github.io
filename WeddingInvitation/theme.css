@@ -24,16 +24,16 @@ html, body {
     transform: translate(-50%, 0);
 }
 
-.header{
+.header {
     background-image: url(./img/back1.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: scroll;
     background-size: cover;
-    height: 90vh;
+    height: 82vh;
     margin: 0;
     padding-top: 18vh;
-    border-bottom:1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     font-weight: normal;
 }
 .heading {
