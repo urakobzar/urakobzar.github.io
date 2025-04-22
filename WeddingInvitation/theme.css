@@ -15,24 +15,28 @@ html, body {
 
 }
 
-.header-arrow{
-    width:48px;
-    height:48px;
-    position:absolute;
-    bottom:30px;
-    left:50%;
-    transform: translate(-50%, 0);
+.header-content {
+    width: 90%;
+    height: 85%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2vh 0;
+    box-sizing: border-box;
+    background-image: url(./img/frame.jpg); /* Укажите путь к вашему изображению */
+    background-size: contain; /* Растягивает изображение с сохранением пропорций */
+    background-position: center center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Отключает повторение */
 }
 
 .header {
-    background-image: url(./img/back1.jpg);
+    background-image: url(./img/back_h.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: scroll;
     background-size: cover;
-    height: 82vh;
+    height: 85vh;
     margin: 0;
-    padding-top: 18vh;
+    padding-top: 15vh;
     border-bottom: 1px solid rgb(255, 255, 255);
     font-weight: normal;
 }
@@ -125,16 +129,6 @@ html, body {
 .resort-image{
     width: 100%
 }
-/*body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #fff;
-  }*/
 
   .calendar {
     display: flex;
@@ -168,32 +162,69 @@ html, body {
     flex: 0 0 auto; /* Фиксированная ширина */
 }
 
-  .calendar-date .day {
-    font-size: 26px;
-    color: #4E1F31;
-  }
+.calendar-date .day {
+font-size: 26px;
+color: #4E1F31;
+}
 
-  .calendar-date .year {
-    font-size: 14px;
-    color: #4E1F31;
-    margin-top: -6px;
-  }
+.calendar-date .year {
+font-size: 14px;
+color: #4E1F31;
+margin-top: -6px;
+}
 
-  @media (max-width: 480px) {
+
+@media (max-width: 768px) {
+    .header-content {
+        width: 95%;
+        padding: 1vh 0;
+    }
+    
+    .heading-subtext {
+        font-size: 3em !important;
+    }
+    
     .calendar {
-        flex-direction: row; /* Оставляем в строку даже на мобильных */
-        flex-wrap: wrap; /* Разрешаем перенос только если не помещается */
-    }
-    .calendar-section, .calendar-date {
-        padding: 5px; /* Уменьшаем отступы */
-    }
-    .line-text {
-        font-size: 12px; /* Уменьшаем шрифт */
+        transform: scale(0.9);
     }
 }
 
-/*@media only screen and (max-width: 600px) {
-    .heading {
-        font-size: 1024px;
+@media (max-width: 480px) {
+    /*.calendar {
+        flex-direction: row; /* Оставляем в строку даже на мобильных */
+        flex-wrap: wrap; /* Разрешаем перенос только если не помещается */
     }
-  }
+
+    .calendar-section, .calendar-date {
+        padding: 5px; /* Уменьшаем отступы */
+    }
+
+    .line-text {
+        font-size: 12px; /* Уменьшаем шрифт */
+    }*/
+
+        .header-content {
+        padding: 0.5vh 0;
+    }
+    
+    .heading-subtext {
+        font-size: 2.5em !important;
+    }
+    
+    .line-text {
+        width: 80px !important;
+        font-size: 12px !important;
+    }
+    
+    .calendar-date .day {
+        font-size: 22px !important;
+    }
+    
+    .calendar-date .year {
+        font-size: 12px !important;
+    }
+    
+    .sub-heading {
+        font-size: 0.9em !important;
+    }
+}
