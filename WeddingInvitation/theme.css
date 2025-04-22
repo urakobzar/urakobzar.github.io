@@ -1,8 +1,8 @@
 *{
-    /*font-family: 'Quicksand', sans-serif;*/
     font-size: 16px;
     color: #222;
 }
+
 html, body {
     margin: 0;
     height: 100vh;
@@ -12,7 +12,10 @@ html, body {
 
 .body{
     display: flex;
+}
 
+.invitation {
+    font-size: 65px !important;
 }
 
 .header-content {
@@ -29,7 +32,7 @@ html, body {
 }
 
 .header {
-    background-image: url(./img/back_h.jpg);
+    background-image: url(./img/back.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: scroll;
@@ -40,10 +43,12 @@ html, body {
     border-bottom: 1px solid rgb(255, 255, 255);
     font-weight: normal;
 }
+
 .heading {
     color: #4E1F31;
     font-weight: normal;
 }
+
 .heading-subtext {
     color: #4E1F31;
     display: block;
@@ -72,6 +77,7 @@ html, body {
     text-decoration: none;
     z-index: 9999;
 }
+
 .fixed-button::after{
     content: "\25BE";
     display: block;
@@ -81,6 +87,7 @@ html, body {
     margin-top: 10px;
     text-align: center;
 }
+
 .fixed-button:active,
 .fixed-button:hover{
     background: rgba(20,20,20,.9);
@@ -102,49 +109,50 @@ html, body {
 }
 
 .sub-heading{
-    /*font-family: 'CapsuleXProMediumUC';*/
     font-size: 1em;
     line-height: 1em;
     color: #4E1F31;
 }
 
-
 .sub-headin11g {
-    /*font-family: 'CapsuleXProMediumUC';*/
     font-size: 2em;
     line-height: 1em;
     color: #4E1F31;
 }
+
 .details{
     margin: 0 auto 4em;
 }
+
 .details-heading{
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .fas {
     font-size: 3em;
     opacity: .8;
 }
+
 .resort-image{
     width: 100%
 }
 
-  .calendar {
+.calendar {
     display: flex;
-    flex-direction: row; /* Явно указываем направление */
+    flex-direction: row;        /* Явно указываем направление */
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
-    width: auto; /* Ширина по содержимому */
-    margin: 0 auto; /* Центрирование */
+    flex-wrap: nowrap;          /* Запрещаем перенос на новую строку */
+    width: auto;                /* Ширина по содержимому */
+    margin: 0 auto;             /* Центрирование */
     text-align: center;
 }
 
 .calendar-section {
-    flex: 0 0 auto; /* Не растягивать и не сжимать */
-    padding: 0 10px; /* Отступы между элементами */
-    white-space: nowrap; /* Запрет переноса текста */
+    flex: 0 0 auto;             /* Не растягивать и не сжимать */
+    padding: 0 10px;            /* Отступы между элементами */
+    white-space: nowrap;        /* Запрет переноса текста */
 }
 
 .line-text {
@@ -154,27 +162,27 @@ html, body {
     font-size: 14px;
     color: #4E1F31;
     width: 100px;
-    display: block; /* Чтобы текст занимал всю ширину */
+    display: block;             /* Чтобы текст занимал всю ширину */
 }
 
 .calendar-date {
     padding: 0 1px;
-    flex: 0 0 auto; /* Фиксированная ширина */
+    flex: 0 0 auto;             /* Фиксированная ширина */
 }
 
 .calendar-date .day {
-font-size: 26px;
-color: #4E1F31;
+    font-size: 26px;
+    color: #4E1F31;
 }
 
 .calendar-date .year {
-font-size: 14px;
-color: #4E1F31;
-margin-top: -6px;
+    font-size: 14px;
+    color: #4E1F31;
+    margin-top: -6px;
 }
 
-
 @media (max-width: 768px) {
+
     .header-content {
         width: 95%;
         padding: 1vh 0;
@@ -183,6 +191,10 @@ margin-top: -6px;
     .heading-subtext {
         font-size: 3em !important;
     }
+
+    .invitation {
+        font-size: 65px !important;
+    }
     
     .calendar {
         transform: scale(0.9);
@@ -190,25 +202,29 @@ margin-top: -6px;
 }
 
 @media (max-width: 480px) {
-    /*.calendar {
-        flex-direction: row; /* Оставляем в строку даже на мобильных */
-        flex-wrap: wrap; /* Разрешаем перенос только если не помещается */
+    .calendar {
+        flex-direction: row;    /* Оставляем в строку даже на мобильных */
+        flex-wrap: wrap;        /* Разрешаем перенос только если не помещается */
     }
 
     .calendar-section, .calendar-date {
-        padding: 5px; /* Уменьшаем отступы */
+        padding: 5px;           /* Уменьшаем отступы */
     }
 
     .line-text {
-        font-size: 12px; /* Уменьшаем шрифт */
-    }*/
+        font-size: 12px;        /* Уменьшаем шрифт */
+    }
 
-        .header-content {
+    .header-content {
         padding: 0.5vh 0;
     }
     
     .heading-subtext {
         font-size: 2.5em !important;
+    }
+
+    .invitation {
+        font-size: 65px !important;
     }
     
     .line-text {
