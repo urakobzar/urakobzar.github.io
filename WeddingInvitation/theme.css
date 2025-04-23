@@ -18,9 +18,13 @@ html, body {
     font-size: 65px !important;
 }
 
+.names {    
+    line-height: 1;
+}
+
 .header-content {
     width: 90%;
-    height: 85%;
+    height: 93%;
     max-width: 800px;
     margin: 0 auto;
     padding: 2vh 0;
@@ -37,9 +41,9 @@ html, body {
     background-position: 50% 50%;
     background-attachment: scroll;
     background-size: cover;
-    height: 85vh;
+    height: 87vh;
     margin: 0;
-    padding-top: 15vh;
+    padding-top: 13vh;
     border-bottom: 1px solid rgb(255, 255, 255);
     font-weight: normal;
 }
@@ -53,7 +57,7 @@ html, body {
     color: #4E1F31;
     display: block;
     font-family: 'Saint Amour Script';
-    font-size: 60px;
+    font-size: 3em;
     font-weight: normal;
 }
 
