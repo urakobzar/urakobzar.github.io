@@ -20,7 +20,7 @@ html, body {
 
 .names {    
     line-height: 1;
-    margin: -10;
+    margin: 0;
 }
 
 .header-content {
@@ -52,6 +52,8 @@ html, body {
 .heading {
     color: #4E1F31;
     font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .heading-subtext {
@@ -150,7 +152,7 @@ html, body {
     justify-content: center;
     flex-wrap: nowrap;          /* Запрещаем перенос на новую строку */
     width: auto;                /* Ширина по содержимому */
-    margin: 0 auto;             /* Центрирование */
+    margin: -5 auto;             /* Центрирование */
     text-align: center;
 }
 
@@ -194,7 +196,7 @@ html, body {
     }
     
     .heading-subtext {
-        font-size: 3em !important;
+        font-size: 4em !important;
     }
 
     .invitation {
@@ -217,7 +219,7 @@ html, body {
     }
 
     .line-text {
-        font-size: 12px;        /* Уменьшаем шрифт */
+        font-size: 16px;        /* Уменьшаем шрифт */
     }
 
     .header-content {
@@ -225,7 +227,7 @@ html, body {
     }
     
     .heading-subtext {
-        font-size: 2.5em !important;
+        font-size: 3em !important;
     }
 
     .invitation {
