@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'CapsuleXProMediumUC';
-	src: url('fonts/capsulexpromediumuc.eot'); /* IE 9 Compatibility Mode */
-	src: url('fonts/capsulexpromediumuc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('fonts/capsulexpromediumuc.woff2') format('woff2'), /* Super Modern Browsers */
-		url('fonts/capsulexpromediumuc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('fonts/capsulexpromediumuc.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('fonts/capsulexpromediumuc.svg#capsulexpromediumuc') format('svg'); /* Chrome < 4, Legacy iOS */
-}

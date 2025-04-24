@@ -20,6 +20,7 @@ html, body {
 
 .names {    
     line-height: 1;
+    margin: -10;
 }
 
 .header-content {
@@ -57,7 +58,7 @@ html, body {
     color: #4E1F31;
     display: block;
     font-family: 'Saint Amour Script';
-    font-size: 3em;
+    font-size: 4em;
     font-weight: normal;
 }
 
